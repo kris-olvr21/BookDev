@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Cadastro <span>BookDev</span></h1>
+        <p>Quer receber seu livro preferido em casa? Cadastre-se e aguarde a confirmação para iniciar uma nova aventura, sem sair de casa!</p>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Nome completo" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="email@dominio.com" required>
+
+            <br />
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" placeholder="Rua Nome da Rua">
+
+            <label for="number">Número:</label>
+            <input type="number" id="number">
+
+            <br />
+            <label for="district">Bairro</label>
+            <input type="text" id="district">
+
+            <label for="complement">Complemento</label>
+            <input type="text" id="complement" placeholder="Casa, Apartamento, Bloco...">
+
+            <br />
+            <label for="city">Cidade</label>
+            <input type="text" id="city">
+
+            <label for="state">Estado</label>
+            <input type="text" id="state">
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações sobre livros</legend>
+
+            <label for="gender">Conta pra gente, que gênero de livro você prefere?</label>
+            <select name="gender" id="gender">
+                <option value="" disabled selected></option>
+                <option value="">Romance</option>
+                <option value="">Drama</option>
+                <option value="">Mistério</option>
+                <option value="">Humor</option>
+                <option value="">Poesia</option>
+                <option value="">Autoajuda</option>
+                <option value="">Acadêmico</option>
+            </select>
+
+            <br />
+            <label for="amount">Qual a quantidade de livros que você costuma ler em 1 ano?</label>
+            <input type="number" id="amount">
+
+            <br />
+            <label for="book">Qual o nome do seu livro preferido do momento?</label>
+            <input type="text" id="book">
+        </fieldset>
+
+        <input type="checkbox" id="news">
+            <label for="news" class="news">Deseja receber nossas novidades por e-mail?</label>
+
+        <div class="finish">
+            <input type="submit" value="Enviar" class="button">
+        </div>
+        
+    </main>
+</body>
+</html>
